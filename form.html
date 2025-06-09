@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>form example</title>
+    </head>
+    <body>
+        <h1>Form example</h1>
+        <form action="/submit" method="post">
+            <label for="user_first_name">First name:</label>
+            <input type="text" name="user_first_name"/><br><br>
+
+            <label for="user_last_name">Last name:</label>
+            <input type="text" name="user_last_name"/><br><br>
+
+            <label for="user_email">Email:</label>
+            <input type="email" name="user_email"/><br><br>
+
+            <label for="user_age">Age:</label>
+            <input type="number" name="user_age"/><br><br>
+            <input type="radio" name="user_gender" value="M" id="M"/>male
+            <input type="radio" name="user_gender" value="F" id="F"/>female
+            <input type="checkbox" name="user_terams" value="agree"/>
+            <label for="user_terams"> i agree to the terms and conditions</label><br><br>
+            <label for="user_number">Number:</label>
+            <input type="number" name="user_number"/><br><br>
+
+            <label for="user_course">Course:</label>
+            <input type="text" name="user_course"/><br><br>
+
+            <label for="cars">Choos a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">volvo</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">Bmw</option>
+                <option value="kia">Kia</option>
+            </select><label><br><br>
+
+            <input type="submit"  value="signup"/>
+        </form>
+    </body>
+</html>
