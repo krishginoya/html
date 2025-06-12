@@ -3,36 +3,40 @@
         <title>form example</title>
     </head>
     <body>
+         <center>
+        <table border="3">
+            <form method="post">
+                <caption><B>STUDENT FORM</B></caption>
+
         <h1>Form example</h1>
         <form action="/submit" method="post">
-            <label for="user_first_name">First name:</label>
-            <input type="text" name="user_first_name"/><br><br>
+        <th>First name:</th>
+        <td><input type="text" name="user_first_name"/></td>
 
-            <label for="user_last_name">Last name:</label>
-            <input type="text" name="user_last_name"/><br><br>
+            <tr><th>Last name:</th>
+            <td><input type="text" name="user_last_name"/></td></tr>
 
-            <label for="user_email">Email:</label>
-            <input type="email" name="user_email"/><br><br>
+            <tr><th>Email:</th>
+            <td><input type="email" name="user_email"/></tr>
 
-            <label for="user_age">Age:</label>
-            <input type="number" name="user_age"/><br><br>
+            <tr><th>Age:</th>
+            <td><input type="number" name="user_age"/></td></tr>
 
-            <label for="user_number">Number:</label>
-            <input type="number" name="user_number"/><br><br>
+            <tr><th>Number:</th>
+            <td><input type="number" name="user_number"/></td></tr>
 
-            <label for="user_course">Course:</label>
-            <input type="text file" name="user_course"/><br><br>
+            <tr><th>Course:</th>
+            <td><input type="text file" name="user_course"/></td></tr>
 
-            <label for="Course">Choose a Course:</label>
-            <select id="Course" name="Course">
+            <tr><th>Choose a Course:</th>
+            <td><select id="Course" name="Course">
                 <option value="bca">BCA</option>
                 <option value="b.com">B.COM</option>
                 <option value="bba">BBA</option>
                 <option value="b.tech">B.TECH</option>
-            </select><label><br><br><br>
-
-            <label for="dob">DOB:</label>
-            <select id="dob" name="dob">
+            </select></td></tr>
+            <tr><th>DOB:</th>
+            <td><select id="dob" name="dob">
                 <option value="Date">Date</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -109,8 +113,9 @@
             <option value="2023">2023</option>
             <option value="2024">2024</option>
             <option value="2025">2025</option>
-            </select><label><br><br>
-            <input type="submit"  value="signup"/>
+            </select></td></tr>
+            <th><input type="Reset"  value="reset"/></th>
+            <th><input type="submit"  value="signup"/></th>
         </form>
     </body>
 </html>
